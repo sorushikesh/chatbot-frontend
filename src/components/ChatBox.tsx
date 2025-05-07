@@ -128,16 +128,14 @@ const ChatBox = () => {
             {msgs.map((msg, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col ${
-                  msg.sender === 'user' ? 'items-end' : 'items-start'
-                }`}
+                className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'
+                  }`}
               >
                 <div
-                  className={`px-4 py-2 rounded-xl shadow-sm max-w-[75%] text-base whitespace-pre-line ${
-                    msg.sender === 'user'
+                  className={`px-4 py-2 rounded-xl shadow-sm max-w-[75%] text-base whitespace-pre-line ${msg.sender === 'user'
                       ? 'bg-green-100 text-black rounded-br-none'
                       : 'bg-gray-100 text-black rounded-bl-none'
-                  }`}
+                    }`}
                 >
                   {msg.text}
                 </div>
@@ -149,12 +147,12 @@ const ChatBox = () => {
           </div>
         ))}
         {isTyping && (
-        <div className="flex items-center space-x-1 px-2">
-          <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
-          <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
-          <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></span>
-        </div>
-      )}
+          <div className="flex items-center space-x-1 px-2">
+            <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+            <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+            <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></span>
+          </div>
+        )}
         <div ref={bottomRef} />
       </div>
 

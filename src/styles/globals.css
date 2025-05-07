@@ -3,11 +3,13 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background: #f0f0f0; /* Light background */
+  background: #f0f0f0;
+  /* Light background */
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  animation: fadeIn 0.6s ease-in-out; /* Fade-in effect for the chatbox */
+  animation: fadeIn 0.6s ease-in-out;
+  /* Fade-in effect for the chatbox */
 }
 
 /* Message bubbles */
@@ -16,7 +18,8 @@
   overflow-y: auto;
   margin-bottom: 16px;
   padding-right: 10px;
-  animation: slideIn 0.6s ease-out; /* Slide-in effect for messages */
+  animation: slideIn 0.6s ease-out;
+  /* Slide-in effect for messages */
 }
 
 .message {
@@ -28,34 +31,48 @@
   color: #333;
   word-wrap: break-word;
   position: relative;
-  animation: floatMessage 1s ease-in-out infinite;  /* Floating effect */
+  animation: floatMessage 1s ease-in-out infinite;
+  /* Floating effect */
 }
 
 .message.user {
-  background-color: #009688;  /* User bubble (Vibrant teal) */
+  background-color: #009688;
+  /* User bubble (Vibrant teal) */
   color: white;
   align-self: flex-end;
-  border: 2px solid #004d40; /* Glowing effect */
+  border: 2px solid #004d40;
+  /* Glowing effect */
 }
 
 .message.bot {
   background-color: #fff;
   color: #333;
-  border: 2px solid #b0bec5; /* Light grey border */
+  border: 2px solid #b0bec5;
+  /* Light grey border */
 }
 
 /* Typing Indicator */
 .typing {
   font-size: 18px;
-  color: #ff4081;  /* Typing indicator with a pink futuristic color */
+  color: #ff4081;
+  /* Typing indicator with a pink futuristic color */
   font-style: italic;
-  animation: typing 1.5s infinite;  /* Typing animation */
+  animation: typing 1.5s infinite;
+  /* Typing animation */
 }
 
 @keyframes typing {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.5; }
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
 }
 
 /* Input container */
@@ -63,7 +80,8 @@
   display: flex;
   align-items: center;
   margin-top: 20px;
-  animation: inputFadeIn 0.6s ease-out; /* Input field fading effect */
+  animation: inputFadeIn 0.6s ease-out;
+  /* Input field fading effect */
 }
 
 .input-field {
@@ -80,11 +98,13 @@
 
 .input-field:focus {
   outline: none;
-  border-color: #00bcd4; /* Neon border on focus */
+  border-color: #00bcd4;
+  /* Neon border on focus */
 }
 
 /* Send button */
-.send-button, .voice-button {
+.send-button,
+.voice-button {
   padding: 14px;
   background-color: #00bcd4;
   color: white;
@@ -94,9 +114,12 @@
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.send-button:hover, .voice-button:hover {
-  background-color: #0097a7; /* Slight darken effect */
-  transform: scale(1.1);  /* Hover effect for scale */
+.send-button:hover,
+.voice-button:hover {
+  background-color: #0097a7;
+  /* Slight darken effect */
+  transform: scale(1.1);
+  /* Hover effect for scale */
 }
 
 /* Quick reply buttons */
@@ -129,10 +152,12 @@
     transform: translateY(0);
     opacity: 0.8;
   }
+
   50% {
     transform: translateY(-10px);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0);
     opacity: 0.8;
@@ -144,6 +169,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -155,6 +181,7 @@
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -166,6 +193,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
