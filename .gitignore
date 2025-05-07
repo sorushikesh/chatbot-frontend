@@ -39,3 +39,63 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Node modules
+node_modules/
+.pnp/
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Debug
+*.log
+*.tsbuildinfo
+
+# Build output
+dist/
+build/
+
+# Local environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel & deployment
+.vercel/
+.netlify/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# VS Code extension folders
+.history/
+
+# Test snapshots
+__snapshots__/
+
+# Mac system file
+*.DS_Store
+
