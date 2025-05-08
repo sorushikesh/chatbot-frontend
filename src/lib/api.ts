@@ -1,6 +1,6 @@
 export const askBot = async (message: string): Promise<string> => {
   try {
-    const response = await fetch('/api/chatbot', {
+    const response = await fetch('http://localhost:8000/api/chat/ask', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
